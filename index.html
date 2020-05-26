@@ -106,9 +106,15 @@
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
       <img
-        src="./firefoxlogo120.png"
-        alt="Firefox logo"
-      />
+            srcset="
+              ./firefoxlogo120.png 120w,
+              ./firefoxlogo400.png 400w
+            "
+            sizes="(max-width: 500px) 120px,
+          400px"
+            alt="Firefox Logo"
+            src="./firefoxlogo400.png"
+          />
     </header>
 
     <main>
